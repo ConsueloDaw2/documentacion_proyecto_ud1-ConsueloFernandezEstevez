@@ -5,11 +5,28 @@ import java.util.List;
 import java.util.Scanner;
 
 
+/**
+ * Este es el inicio de una aplicación de consulta de incidencias de soporte de un centro
+ *
+ * La aplicación puede usarse de dos formas:
+ * Modo interactivo
+ * Modo línea de comandos
+ */
+
 public final class App {
 
     private App() {
     }
 
+    /**
+     * Este es el método principal de la aplicación.
+     *
+     * <p> Si no se recibe ningún argumento determina la operación a realizar.</p>
+     * <p> Si la operación no se reconoce muestra la ayuda.</p>
+     *
+     * @param args la operación {@code ayuda}, {@code listar}, {@code buscar} o {@code detalle}
+     *             seguida de sus parámetros si procede.
+     */
     public static void main(String[] args) {
         GestorIncidencias gestor = new GestorIncidencias();
 

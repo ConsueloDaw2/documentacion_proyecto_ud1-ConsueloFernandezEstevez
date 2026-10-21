@@ -3,13 +3,13 @@
 # Gestor de incidencias
 
 ## Nombre, finalidad y descripción breve del proyecto
-- Nombre: gestor de incidencias
-- Finalidad: su finalidad es la de servir de soporte para consultar los avisos del centro
-- Descripción breve: de manera sencilla se muestran en un menú cinco opciones. En el listado de funcionalidades se especifican las mismas.
+- **Nombre**: gestor de incidencias
+- **Finalidad**: su finalidad es la de servir de soporte para consultar los avisos del centro
+- **Descripción breve**: de manera sencilla se muestran en un menú de consola cinco opciones para consultar las incidencias. En el listado de funcionalidades se especifican las mismas.
 
 ## Versión de java que utiliza
-- java version "1.8.0_491".
-- javac 25.0.3.- 
+- java 25.0.3.
+- javac 25.0.3. 
 
 ## Listado de funcionalidades que permite realizar la aplicación
 1. muestras todas las incidencias, 
@@ -24,12 +24,39 @@
 .\mvnw.cmd clean compile exec:java
 
 ```
+Al ejecutarse sin argumentos de abre el menu interactivo.
 
-## generación y consulta de Javadoc
+## Generación y consulta de Javadoc
 
-## una tabla con las clases principales y su responsabilidad general
+```bash
+.\mvnw.cmd javadoc:javadoc
 
-## estructura de archivos
+```
 
-## enlace a la documentación Javadoc publicada mediante GitHub Pages
+## Tabla con las clases principales y su responsabilidad general
+| Clase | Responsabilidad |
+|---|---|
+| `App` | Inicio. Gestiona la interacción con el usuario por consola: menú interactivo y operaciones por línea de comandos. |
+| `GestorIncidencias` | Contiene el conjunto de incidencias fijas y ofrece una lista de operaciones: listar, listar abiertas, buscar por texto y buscar por identificador. |
+| `Incidencia` | Representa un aviso de soporte con su identificador, título, prioridad y estado (abierta o cerrada). |
+| `IncidenciaNoEncontradaException` | Excepción que se lanza cuando se consulta un identificador que no existe. |
+
+
+## Estructura de archivos
+
+```text
+proyecto-base-maven-gestor incidencias/
+├── README.md
+└── src/
+|    └── main/
+|       └── java/
+|            └── es.centro.incidencias/
+|                ├── App.java
+|                ├── GestorIncidencias.java
+|                ├── Incidencia.java
+|                └── IncidenciaNoEncontradaException.java
+|__ docs/              
+```
+
+## Enlace a la documentación Javadoc publicada mediante GitHub Pages
 
