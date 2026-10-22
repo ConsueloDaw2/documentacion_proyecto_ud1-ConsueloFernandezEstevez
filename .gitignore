@@ -1,5 +1,6 @@
-/target/
-/.idea/
-/.vscode/
+target/
+out/
+.idea/
+.vscode/
 *.iml
 *.class
