@@ -43,20 +43,27 @@ Al ejecutarse sin argumentos de abre el menu interactivo.
 
 
 ## Estructura de archivos
-
-```text
-proyecto-base-maven-gestor incidencias/
+```
+documentacion_proyecto_ud1-ConsueloFernandezEstevez/
+├── .mvn/
+├── docs/
+├── src/
+│   └── main/
+│       └── java/
+│           └── es/
+│               └── centro/
+│                   └── incidencias/
+│                       ├── App.java
+│                       ├── GestorIncidencias.java
+│                       ├── Incidencia.java
+│                       └── IncidenciaNoEncontradaException.java
+├── .gitignore
+├── ENUNCIADO_ACTIVIDAD.md
 ├── README.md
-└── src/
-|    └── main/
-|       └── java/
-|            └── es.centro.incidencias/
-|                ├── App.java
-|                ├── GestorIncidencias.java
-|                ├── Incidencia.java
-|                └── IncidenciaNoEncontradaException.java
-|__ docs/              
+├── mvnw
+├── mvnw.cmd
+└── pom.xml
 ```
 
 ## Enlace a la documentación Javadoc publicada mediante GitHub Pages
-
+<https://consuelodaw2.github.io/documentacion_proyecto_ud1-ConsueloFernandezEstevez/>
